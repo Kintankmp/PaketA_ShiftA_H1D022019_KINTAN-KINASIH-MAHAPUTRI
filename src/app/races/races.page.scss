@@ -1,0 +1,92 @@
+/* Gaya umum untuk halaman */
+.page {
+    background-color: #f9f9f9; /* Latar belakang halaman */
+    padding: 16px;
+  }
+  
+  /* Gaya untuk judul halaman */
+  h1 {
+    font-size: 2rem;
+    color: #007acc; /* Warna biru untuk judul */
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  /* Gaya untuk daftar balapan */
+  .race-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .race-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk item */
+  }
+  
+  .race-item:hover {
+    background-color: #f0f0f0; /* Efek hover untuk item */
+  }
+  
+  .race-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Warna teks untuk judul balapan */
+  }
+  
+  .race-description {
+    font-size: 1rem;
+    color: #666; /* Warna teks untuk deskripsi balapan */
+  }
+  
+  /* Gaya untuk tombol tambah balapan */
+  .add-race-button {
+    background-color: #28a745; /* Warna hijau untuk tombol */
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-race-button:hover {
+    background-color: #218838; /* Warna hijau lebih gelap saat hover */
+  }
+  
+  .add-race-button:active {
+    background-color: #1e7e34; /* Warna hijau saat tombol ditekan */
+  }
+  
+  /* Gaya untuk form input (jika diperlukan untuk penambahan balapan) */
+  .race-form {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #007acc;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical; /* Membuat area textarea bisa diubah ukurannya secara vertikal */
+  }
+  

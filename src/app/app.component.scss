@@ -1,0 +1,87 @@
+/* Gaya global untuk aplikasi */
+:host {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Kontainer utama aplikasi */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f4f4f9; /* Latar belakang aplikasi */
+    color: #333; /* Warna teks default */
+  }
+  
+  /* Gaya untuk header */
+  app-header {
+    background-color: #007acc; /* Warna biru untuk header */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan pada header */
+  }
+  
+  /* Gaya khusus untuk ion-header */
+  ion-header {
+    --background: #007acc; /* Warna biru untuk header */
+    --color: #ffffff;      /* Warna teks putih */
+  }
+  
+  /* Gaya untuk konten utama */
+  .app-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Menangani scroll jika konten terlalu panjang */
+  }
+  
+  /* Gaya untuk footer */
+  app-footer {
+    background-color: #333; /* Warna gelap untuk footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  /* Gaya khusus untuk ion-footer */
+  ion-footer {
+    --background: #333;    /* Warna gelap untuk footer */
+    --color: #ffffff;      /* Warna teks putih */
+    text-align: center;
+  }
+  
+  /* Link di footer */
+  app-footer a, .footer-content a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  app-footer a:hover, .footer-content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsivitas untuk layar kecil */
+  @media (max-width: 600px) {
+    .app-container {
+      font-size: 0.9rem;
+    }
+  
+    app-header {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    .app-content {
+      padding: 10px;
+    }
+  
+    app-footer {
+      font-size: 0.8rem;
+    }
+  }
+  

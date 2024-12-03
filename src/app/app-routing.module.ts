@@ -4,19 +4,19 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'mahasiswa',
+    redirectTo: 'races', // Mengarahkan ke halaman races saat root path diakses
     pathMatch: 'full'
   },
   {
-    path: 'mahasiswa',
-    loadChildren: () => import('./mahasiswa/mahasiswa.module').then(m => m.MahasiswaPageModule)
+    path: 'races',
+    loadChildren: () => import('./races/races.module').then(m => m.RacesPageModule) // Memuat modul races
   },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }) // Strategi preloading
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

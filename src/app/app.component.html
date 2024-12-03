@@ -1,3 +1,24 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <!-- Header -->
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Radiator Springs App</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Konten Utama -->
+  <ion-content>
+    <div class="app-content">
+      <ion-router-outlet></ion-router-outlet>
+    </div>
+  </ion-content>
+
+  <!-- Footer -->
+  <ion-footer>
+    <ion-toolbar>
+      <div class="footer-content">
+        &copy; 2024 Radiator Springs | <a href="/about">About Us</a>
+      </div>
+    </ion-toolbar>
+  </ion-footer>
 </ion-app>
