@@ -1,1 +1,0 @@
-# PrakMobile_Kintan-Kinasih-Mahaputri_ionic3
